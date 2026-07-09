@@ -2,6 +2,9 @@ MiniSocial 🌐
 
 Un'app social feed full-stack costruita con React, TypeScript e Supabase. Gli utenti possono registrarsi, pubblicare post, mettere like e visualizzare il proprio profilo.
 
+Link per demo:
+mini-social-awgr4bj4h-francesco97.vercel.app
+
 
 ✨ Funzionalità
 
