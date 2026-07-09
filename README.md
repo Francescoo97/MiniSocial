@@ -93,14 +93,14 @@ Breakpoint: 768px (tablet), 1024px (desktop)
 git clone https://github.com/Francescoo97/MiniSocial.git
 cd MiniSocial
 
-# Installa le dipendenze
+#Installa le dipendenze
 npm install
 
-# Crea il file .env con le credenziali Supabase
+#Crea il file .env con le credenziali Supabase
 cp .env.example .env
-# Inserisci VITE_SUPABASE_URL e VITE_SUPABASE_ANON_KEY
+#Inserisci VITE_SUPABASE_URL e VITE_SUPABASE_ANON_KEY
 
-# Avvia il server di sviluppo
+#Avvia il server di sviluppo
 npm run dev
 
 
