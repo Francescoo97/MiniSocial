@@ -18,14 +18,14 @@ export function PostProvider({ children }: { children: ReactNode }) {
 
   const { user } = useAuth();
 
-  // Query per prendere tutti i post con autore e conteggio like.
+  // Query per prendere tutti i post con autore e conteggio like e commenti.
   const fetchPosts = async () => {
     // Inizia il caricamento.
     setIsLoading(true);
 
     const { data, error } = await supabase
       .from("posts")
-      .select("*, author:profiles(*), likes(count)")
+      .select("*, author:profiles(*), likes(count), comments(count)")
       .order("created_at", { ascending: false });
 
     if (error) {

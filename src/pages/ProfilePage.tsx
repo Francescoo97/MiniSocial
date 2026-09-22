@@ -53,7 +53,7 @@ function ProfilePage() {
         </header>
 
         {getTotalPosts.length === 0 ? (
-          <p className="profile__empty">Nessun post ancora</p>
+          <p className="profile__empty">Ancora nessun post</p>
         ) : (
           getTotalPosts.map((post) => (
             <PostCardWrapper key={post.id} post={post} />

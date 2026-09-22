@@ -12,8 +12,9 @@ export type Post = {
   content: string;
   image_url: string | null;
   created_at: string;
-  // Supabase restituisce i like come array quando viene usato likes(count) nella query.
+  // Supabase restituisce i like e i commenti come array quando viene usato likes(count) e comments(count) nella query.
   likes: { count: number }[];
+  comments: { count: number }[];
 };
 
 export type Like = {
@@ -21,4 +22,13 @@ export type Like = {
   user_id: string;
   post_id: string;
   created_at: string;
+};
+
+export type Comment = {
+  id: string;
+  user_id: string;
+  post_id: string;
+  created_at: string;
+  content: string;
+  author?: Profile;
 };
