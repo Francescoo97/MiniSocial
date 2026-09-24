@@ -430,10 +430,6 @@ ul {
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  background-image: url("/public/Social-bcgrnd.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .auth-form {
